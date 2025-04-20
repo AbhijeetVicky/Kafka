@@ -14,4 +14,12 @@ public class KafkaTopicConfig {
                 //.replicas(1)
                 .build();
     }
+
+    @Bean
+    public NewTopic createKafkaTopic_json(){
+        return TopicBuilder.name("Demo-Kafka-TopicName_json")
+                //.partitions(3)
+                //.replicas(1)
+                .build();
+    }
 }
